@@ -1,0 +1,94 @@
+﻿{
+    "generated_at":  "2026-04-22T05:58:57.152160+00:00",
+    "project":  "Rescue Swarm AI",
+    "runs":  [
+                 {
+                     "routing":  "greedy",
+                     "weather":  "clear",
+                     "steps":  24,
+                     "survivors_total":  6,
+                     "survivors_found":  6,
+                     "success_rate":  1.0,
+                     "average_battery":  55.88,
+                     "final_discovery_curve":  [
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   6
+                                               ],
+                     "path_count":  8
+                 },
+                 {
+                     "routing":  "probability",
+                     "weather":  "clear",
+                     "steps":  70,
+                     "survivors_total":  6,
+                     "survivors_found":  3,
+                     "success_rate":  0.5,
+                     "average_battery":  27.12,
+                     "final_discovery_curve":  [
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3
+                                               ],
+                     "path_count":  8
+                 },
+                 {
+                     "routing":  "greedy",
+                     "weather":  "rain",
+                     "steps":  24,
+                     "survivors_total":  6,
+                     "survivors_found":  6,
+                     "success_rate":  1.0,
+                     "average_battery":  43.88,
+                     "final_discovery_curve":  [
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   5,
+                                                   6
+                                               ],
+                     "path_count":  8
+                 },
+                 {
+                     "routing":  "probability",
+                     "weather":  "rain",
+                     "steps":  70,
+                     "survivors_total":  6,
+                     "survivors_found":  3,
+                     "success_rate":  0.5,
+                     "average_battery":  79.0,
+                     "final_discovery_curve":  [
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3,
+                                                   3
+                                               ],
+                     "path_count":  8
+                 }
+             ]
+}

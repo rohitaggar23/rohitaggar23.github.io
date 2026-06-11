@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "name": "Rohit Aggarwal",
+    "title": "AI/ML Engineer | M.Tech CS-AI, IIT Roorkee",
+    "tagline": "Applied AI engineer specializing in LLMs, RAG, agents, NLP, evaluation, and recommender systems.",
+    "location": "IIT Roorkee, Uttarakhand, India",
+    "githubUsername": "rohitaggar23",
+    "linkedin": "https://linkedin.com/in/rohit-aggarwal-7a6110221",
+    "email": "rohit_a1@mfs.iitr.ac.in",
+    "resumeUrl": "assets/Rohit_Aggarwal_Resume.pdf",
+    "photo": "assets/rohit-aggarwal.jpg"
+  },
+  "education": [
+    {
+      "degree": "M.Tech. CS-AI",
+      "institution": "Indian Institute of Technology Roorkee (IITR)",
+      "period": "Expected 2026",
+      "detail": "CGPA 8.784/10"
+    },
+    {
+      "degree": "B.Tech. CSAI",
+      "institution": "Indraprastha Institute of Information Technology, Delhi (IIITD)",
+      "period": "2024",
+      "detail": "CGPA 6.820/10"
+    }
+  ],
+  "publications": [
+    {
+      "title": "RideCopilot: An Agentic, LLM-Based Conversational System for Multi-Stakeholder Taxi Operations and Fleet Management with Time Series Models",
+      "authors": "Aggarwal, R.; Kumar, V.",
+      "venue": "Accepted to ATT 2026: 14th International Workshop on Agents in Traffic and Transportation, with AAMAS 2026, Paphos, Cyprus",
+      "year": "2026"
+    },
+    {
+      "title": "Global Awareness Landscape for Ailments: A Twitter Based Microscopic View Into Thought Processes of People",
+      "authors": "Toshniwal, D.; Somani, S.; Aggarwal, R.; Malik, P.",
+      "venue": "Frontiers in Big Data 2:18. DOI: 10.3389/fdata.2019.00018",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Research Intern - RideCopilot",
+      "organization": "Indian Institute of Technology Roorkee",
+      "period": "Jul 2025 - Sep 2025",
+      "detail": "Built an agentic copilot that converts passenger, driver, and operator language into bounded dispatch updates with solver-grounded optimization and forecast-aware repositioning."
+    }
+  ],
+  "repos": {
+    "orion": "orion-tool-agent",
+    "atlas": "atlas-rag-copilot",
+    "sentinel": "sentinel-eval-safety-suite",
+    "rescue": "rescue-swarm-ai",
+    "recommender": "restaurant-hybrid-recommender",
+    "portfolio": "portfolio-hub"
+  }
+}

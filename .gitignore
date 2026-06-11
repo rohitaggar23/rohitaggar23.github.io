@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+
+# if you add a build step later
+/dist/

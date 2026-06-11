@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Aggarwal | AI/ML Systems Portfolio</title>
+    <meta name="description" content="AI/ML systems portfolio for Rohit Aggarwal with RAG, agents, evaluation, simulation, recommender systems, publications, and education." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <canvas id="networkCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Portfolio home">
+        <span class="brand__mark">RA</span>
+        <span>
+          <strong id="profileName">Rohit Aggarwal</strong>
+          <small id="profileTitle">AI/ML Engineer</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button--ghost" id="resumeLink" href="assets/Rohit_Aggarwal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a class="button" id="githubLink" href="#" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Applied AI systems portfolio</p>
+          <h1>Building reliable AI systems with evidence and evaluation.</h1>
+          <p class="hero__lead" id="profileTagline">
+            Applied AI engineer specializing in retrieval-augmented generation, tool-using agents, evaluation and safety regression, recommender systems, and simulation.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">Explore Projects</a>
+            <a class="button button--light" href="#publications">View Publications</a>
+          </div>
+          <div class="hero__stats" id="heroStats"></div>
+        </div>
+
+        <aside class="hero-card" aria-label="Profile summary">
+          <div class="portrait-ring">
+            <img id="profilePhoto" src="assets/rohit-aggarwal.jpg" alt="Rohit Aggarwal" />
+          </div>
+          <div class="hero-card__content">
+            <p class="eyebrow">Candidate profile</p>
+            <h2>Rohit Aggarwal</h2>
+            <p id="heroLocation">Roorkee, Uttarakhand, India</p>
+          </div>
+          <div class="orbit orbit--one"></div>
+          <div class="orbit orbit--two"></div>
+        </aside>
+      </section>
+
+      <section class="ticker" aria-label="Portfolio evidence ticker">
+        <div class="ticker__track" id="tickerTrack"></div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section__intro">
+          <p class="eyebrow">// about</p>
+          <h2>Building AI systems that are measured, reproducible, and ready to review.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="terminal-card" aria-label="Terminal profile summary">
+            <div class="terminal-card__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre id="terminalText"></pre>
+          </div>
+          <div class="about-copy">
+            <p>
+              I work across retrieval-augmented generation, tool-using agents, LLM evaluation,
+              safety regression, recommender systems, and multi-agent simulation. The portfolio is
+              structured around artifacts that can be inspected: datasets, metrics, reports,
+              generated figures, and runnable code.
+            </p>
+            <p>
+              My current academic focus is M.Tech CS-AI at IIT Roorkee, with research work on
+              RideCopilot, an agentic LLM copilot for taxi fleet operations and forecasting-aware dispatch.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="evidence">
+        <div class="section__intro">
+          <p class="eyebrow">// evidence</p>
+          <h2>Real dataset outputs for Orion, Atlas, and Sentinel. Existing generated outputs for Rescue and Restaurant.</h2>
+        </div>
+        <div class="evidence-strip" id="evidenceStrip"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section__intro section__intro--row">
+          <div>
+            <p class="eyebrow">// projects</p>
+            <h2>All repositories in the portfolio bundle, presented as recruiter-ready engineering work.</h2>
+          </div>
+          <div class="filters" id="filters"></div>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="section gallery-section" id="visuals">
+        <div class="section__intro">
+          <p class="eyebrow">// visuals</p>
+          <h2>Project outputs, scorecards, trajectories, and evaluation figures.</h2>
+        </div>
+        <div class="visual-grid" id="visualGrid"></div>
+      </section>
+
+      <section class="section section--split" id="skills">
+        <div>
+          <p class="eyebrow">// skills</p>
+          <h2>Technical stack tuned for applied AI engineering.</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </section>
+
+      <section class="section section--split" id="experience">
+        <div>
+          <p class="eyebrow">// experience</p>
+          <h2>Research and applied systems work.</h2>
+        </div>
+        <div class="timeline-list" id="experienceList"></div>
+      </section>
+
+      <section class="section section--split" id="publications">
+        <div>
+          <p class="eyebrow">// publications</p>
+          <h2>Research work in agentic mobility systems and social data analysis.</h2>
+        </div>
+        <div class="timeline-list" id="publicationList"></div>
+      </section>
+
+      <section class="section section--split" id="education">
+        <div>
+          <p class="eyebrow">// education</p>
+          <h2>Computer Science and Artificial Intelligence foundation.</h2>
+        </div>
+        <div class="timeline-list" id="educationList"></div>
+      </section>
+
+      <section class="section profile-section" id="contact">
+        <div class="profile-panel">
+          <div>
+            <p class="eyebrow">// contact</p>
+            <h2 id="profileHeading">Rohit Aggarwal</h2>
+            <p class="profile-copy">
+              M.Tech CS-AI candidate at IIT Roorkee with hands-on AI/ML systems work across RAG,
+              LLM evaluation, tool-using agents, recommender systems, and multi-agent simulation.
+            </p>
+            <div class="profile-links" id="profileLinks"></div>
+          </div>
+          <div class="skill-board">
+            <div><span>Retrieval</span><strong>Hybrid search, RRF, reranking, citations</strong></div>
+            <div><span>Agents</span><strong>Tool routing, guardrails, trace logging</strong></div>
+            <div><span>Evaluation</span><strong>Truthfulness, groundedness, safety gates</strong></div>
+            <div><span>Applied ML</span><strong>Recommenders, forecasting, simulation metrics</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" id="projectDialog">
+      <button class="dialog-close" id="dialogClose" aria-label="Close project details">Close</button>
+      <div id="dialogContent"></div>
+    </dialog>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

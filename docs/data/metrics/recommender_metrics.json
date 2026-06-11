@@ -1,0 +1,15 @@
+﻿{
+    "generated_at":  "2026-04-22T05:59:05.215044+00:00",
+    "project":  "Restaurant Hybrid Recommender",
+    "dataset":  {
+                    "restaurants":  18,
+                    "reviews":  50,
+                    "users":  10
+                },
+    "offline_metrics":  {
+                            "precision_proxy_at_6":  1.0,
+                            "cold_start_precision_proxy_at_6":  0.8333,
+                            "catalog_coverage_in_two_queries":  0.4444,
+                            "top_user_score":  13.5855
+                        }
+}

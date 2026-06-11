@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" role="img" aria-labelledby="title desc">
+<title id="title">Portfolio quick tour</title>
+<desc id="desc">A five step flow to explore the portfolio.</desc>
+<rect width="1100" height="360" rx="26" fill="#0f172a"/>
+<text x="45" y="70" font-family="Inter,Segoe UI,Arial" font-size="32" font-weight="800" fill="#f8fafc">Quick tour (30 seconds)</text>
+<text x="45" y="104" font-family="Inter,Segoe UI,Arial" font-size="17" fill="#cbd5e1">The repository is organized so a reviewer can verify value quickly.</text>
+<g font-family="Inter,Segoe UI,Arial">
+ <g><circle cx="120" cy="205" r="44" fill="#38bdf8"/><text x="108" y="214" font-size="28" font-weight="800" fill="#0f172a">1</text><text x="65" y="285" font-size="16" fill="#e2e8f0">Read overview</text></g>
+ <g><circle cx="325" cy="205" r="44" fill="#a78bfa"/><text x="313" y="214" font-size="28" font-weight="800" fill="#0f172a">2</text><text x="270" y="285" font-size="16" fill="#e2e8f0">Scan projects</text></g>
+ <g><circle cx="550" cy="205" r="44" fill="#22c55e"/><text x="538" y="214" font-size="28" font-weight="800" fill="#0f172a">3</text><text x="482" y="285" font-size="16" fill="#e2e8f0">View outputs</text></g>
+ <g><circle cx="775" cy="205" r="44" fill="#f59e0b"/><text x="763" y="214" font-size="28" font-weight="800" fill="#0f172a">4</text><text x="702" y="285" font-size="16" fill="#e2e8f0">Verify run log</text></g>
+ <g><circle cx="980" cy="205" r="44" fill="#fb7185"/><text x="968" y="214" font-size="28" font-weight="800" fill="#0f172a">5</text><text x="918" y="285" font-size="16" fill="#e2e8f0">Open code</text></g>
+</g>
+<g stroke="#64748b" stroke-width="4" stroke-linecap="round"><path d="M164 205H281"/><path d="M369 205H506"/><path d="M594 205H731"/><path d="M819 205H936"/></g>
+</svg>

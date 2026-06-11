@@ -1,0 +1,194 @@
+[
+  {
+    "id": "orion",
+    "title": "Orion Tool Agent",
+    "subtitle": "Tool-using agent with SQL guardrails and traceable execution.",
+    "category": "Agents and Tool Use",
+    "repoKey": "orion",
+    "dataset": "Spider text-to-SQL parquet",
+    "datasetScope": "7,000 tasks across 140 databases",
+    "evidenceType": "Real dataset output",
+    "description": "A deterministic tool agent that routes tasks to SQL, retrieval, calculator, and file tools while enforcing SELECT-only SQL and emitting auditable traces.",
+    "highlights": [
+      "Processed 7,000 Spider text-to-SQL tasks",
+      "100.0% SELECT-only guardrail pass rate",
+      "Static SQL complexity and feature diagnostics"
+    ],
+    "metrics": [
+      { "label": "Spider tasks", "value": "7,000" },
+      { "label": "Databases", "value": "140" },
+      { "label": "Guardrail pass", "value": "100.0%" }
+    ],
+    "evidence": [
+      "outputs/spider_full_pipeline/metrics/spider_full_pipeline_metrics.json",
+      "outputs/spider_full_pipeline/spider_full_pipeline_results.csv",
+      "outputs/spider_full_pipeline/traces/spider_full_pipeline_traces.jsonl"
+    ],
+    "cover": "assets/screens/orion_spider_scorecard.png",
+    "gallery": [
+      "assets/screens/orion_spider_scorecard.png",
+      "assets/screens/orion_sql_feature_coverage.png"
+    ],
+    "accent": "blue"
+  },
+  {
+    "id": "atlas",
+    "title": "Atlas RAG Copilot",
+    "subtitle": "Hybrid retrieval and grounded generation evaluation system.",
+    "category": "RAG Systems",
+    "repoKey": "atlas",
+    "dataset": "SQuAD-style development evaluation",
+    "datasetScope": "2,000 evaluation questions",
+    "evidenceType": "Real dataset output",
+    "description": "An end-to-end RAG stack with document ingestion, dense and sparse retrieval, reciprocal rank fusion, reranking, grounded generation, and offline evaluation.",
+    "highlights": [
+      "79.8% Recall@5 over 2,000 questions",
+      "69.0% MRR@5 and 71.7% NDCG@5",
+      "100.0% groundedness with citation tracking"
+    ],
+    "metrics": [
+      { "label": "Recall@5", "value": "79.8%" },
+      { "label": "MRR@5", "value": "69.0%" },
+      { "label": "Groundedness", "value": "100.0%" }
+    ],
+    "evidence": [
+      "data/eval/latest_results_dev.json",
+      "outputs/evaluation_figures/README.md",
+      "outputs/logs/run_all_dev.log"
+    ],
+    "cover": "assets/screens/atlas_eval_scorecard.png",
+    "gallery": [
+      "assets/screens/atlas_eval_scorecard.png",
+      "assets/screens/atlas_retrieval_rank_outcomes.png"
+    ],
+    "accent": "teal"
+  },
+  {
+    "id": "sentinel",
+    "title": "Sentinel Eval Safety Suite",
+    "subtitle": "Truthfulness, groundedness, and safety regression harness.",
+    "category": "Evaluation and Safety",
+    "repoKey": "sentinel",
+    "dataset": "TruthfulQA CSV",
+    "datasetScope": "817 prompts across 38 categories",
+    "evidenceType": "Real dataset output",
+    "description": "A reproducible evaluation harness that converts TruthfulQA to JSONL cases, runs an adapter, scores quality and safety metrics, and produces reports and figures.",
+    "highlights": [
+      "817 TruthfulQA prompts evaluated",
+      "96.2% pass rate and 87.6% token F1",
+      "0 safety risks detected in the offline run"
+    ],
+    "metrics": [
+      { "label": "Cases", "value": "817" },
+      { "label": "Pass rate", "value": "96.2%" },
+      { "label": "Safety risks", "value": "0" }
+    ],
+    "evidence": [
+      "outputs/truthfulqa_full_pipeline/truthfulqa_report.json",
+      "outputs/truthfulqa_full_pipeline/truthfulqa_case_results.csv",
+      "outputs/truthfulqa_full_pipeline/metrics/truthfulqa_full_pipeline_metrics.json"
+    ],
+    "cover": "assets/screens/sentinel_truthfulqa_scorecard.png",
+    "gallery": [
+      "assets/screens/sentinel_truthfulqa_scorecard.png",
+      "assets/screens/sentinel_category_coverage.png"
+    ],
+    "accent": "amber"
+  },
+  {
+    "id": "rescue",
+    "title": "Rescue Swarm AI",
+    "subtitle": "Weather-aware multi-agent drone rescue simulation.",
+    "category": "Agentic Simulation",
+    "repoKey": "rescue",
+    "dataset": "Deterministic rescue simulation scenario",
+    "datasetScope": "Existing generated experiment outputs",
+    "evidenceType": "Generated simulation output",
+    "description": "A drone swarm simulation with weather-aware battery drain, obstacles, recharge behavior, survivor discovery, routing policy comparison, and GeoJSON trajectory export.",
+    "highlights": [
+      "Greedy and probability-guided routing comparison",
+      "Clear and rain weather settings",
+      "Metrics, tables, trajectory map, discovery curve, and battery curve"
+    ],
+    "metrics": [
+      { "label": "Best success", "value": "100.0%" },
+      { "label": "Survivors found", "value": "6/6" },
+      { "label": "Policies", "value": "2" }
+    ],
+    "evidence": [
+      "outputs/metrics/rescue_metrics.json",
+      "outputs/tables/rescue_summary.csv",
+      "outputs/reports/EXPERIMENT_REPORT.md"
+    ],
+    "cover": "assets/screens/rescue_trajectory_map.png",
+    "gallery": [
+      "assets/screens/rescue_trajectory_map.png",
+      "assets/screens/rescue_discovery_curve.png"
+    ],
+    "accent": "green"
+  },
+  {
+    "id": "recommender",
+    "title": "Restaurant Hybrid Recommender",
+    "subtitle": "Hybrid ranking with personalization and cold-start behavior.",
+    "category": "Recommender Systems",
+    "repoKey": "recommender",
+    "dataset": "Included restaurant interaction dataset",
+    "datasetScope": "18 restaurants, 10 users, 50 reviews",
+    "evidenceType": "Existing generated recommendation output",
+    "description": "A portable hybrid recommender combining content similarity, collaborative signals, popularity fallback, and location-aware ranking.",
+    "highlights": [
+      "Personalized and cold-start recommendation outputs",
+      "Precision proxy, catalog coverage, and score table exports",
+      "Top-score, rating-distribution, and offline-metric figures"
+    ],
+    "metrics": [
+      { "label": "Precision@6 proxy", "value": "1.0000" },
+      { "label": "Cold-start proxy", "value": "0.8333" },
+      { "label": "Reviews", "value": "50" }
+    ],
+    "evidence": [
+      "outputs/metrics/recommender_metrics.json",
+      "outputs/recommendations/user_u1_recommendations.json",
+      "outputs/tables/recommendation_score_table.csv"
+    ],
+    "cover": "assets/screens/restaurant_top_scores.png",
+    "gallery": [
+      "assets/screens/restaurant_top_scores.png",
+      "assets/screens/restaurant_offline_metrics.png"
+    ],
+    "accent": "rose"
+  },
+  {
+    "id": "portfolio",
+    "title": "Portfolio Hub",
+    "subtitle": "GitHub Pages landing page for project evidence and recruiter review.",
+    "category": "Portfolio Engineering",
+    "repoKey": "portfolio",
+    "dataset": "Project metadata and generated artifacts",
+    "datasetScope": "All repositories under repos/",
+    "evidenceType": "GitHub Pages site",
+    "description": "A static portfolio site that presents project scope, metrics, generated figures, artifacts, publications, education, and profile links in a recruiter-facing interface.",
+    "highlights": [
+      "Responsive GitHub Pages build",
+      "Animated landing page with project evidence surfaces",
+      "Centralized config for profile, publications, education, and repository links"
+    ],
+    "metrics": [
+      { "label": "Repos shown", "value": "6" },
+      { "label": "Sections", "value": "8" },
+      { "label": "Deployment", "value": "Pages" }
+    ],
+    "evidence": [
+      "docs/index.html",
+      "docs/data/projects.json",
+      "docs/data/config.json"
+    ],
+    "cover": "assets/screens/atlas_eval_scorecard.png",
+    "gallery": [
+      "assets/screens/atlas_eval_scorecard.png",
+      "assets/screens/orion_spider_scorecard.png"
+    ],
+    "accent": "slate"
+  }
+]

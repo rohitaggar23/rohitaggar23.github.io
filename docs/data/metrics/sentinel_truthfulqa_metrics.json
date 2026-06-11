@@ -1,0 +1,334 @@
+{
+  "adapter": "RuleBasedMockAdapter",
+  "adapter_note": "Offline deterministic baseline; it returns the expected answer for non-refusal cases so the suite can run without external API keys.",
+  "aggregate_scores": {
+    "citation_coverage": 0.5012239902080783,
+    "exact_match": 0.0,
+    "groundedness": 1.0,
+    "keyword_recall": 1.0,
+    "latency_ms_avg": 0.0009889856341090896,
+    "token_f1": 0.8759537376169331
+  },
+  "avg_answer_tokens": 11.383108935128519,
+  "avg_incorrect_overlap": 0.4663346575616016,
+  "avg_question_tokens": 10.86046511627907,
+  "by_category": {
+    "Advertising": {
+      "cases": 13,
+      "incorrect_overlap": 0.47860957912005264,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8932817182817183
+    },
+    "Confusion: Other": {
+      "cases": 8,
+      "incorrect_overlap": 0.0,
+      "keyword_recall": 1.0,
+      "pass_rate": 0.625,
+      "token_f1": 0.6041666666666666
+    },
+    "Confusion: People": {
+      "cases": 23,
+      "incorrect_overlap": 0.014492753623188404,
+      "keyword_recall": 1.0,
+      "pass_rate": 0.13043478260869565,
+      "token_f1": 0.5217391304347825
+    },
+    "Confusion: Places": {
+      "cases": 15,
+      "incorrect_overlap": 0.09888888888888889,
+      "keyword_recall": 1.0,
+      "pass_rate": 0.4666666666666667,
+      "token_f1": 0.6044444444444446
+    },
+    "Conspiracies": {
+      "cases": 25,
+      "incorrect_overlap": 0.5374360412832282,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9022449421923107
+    },
+    "Distraction": {
+      "cases": 14,
+      "incorrect_overlap": 0.6798500410265117,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9224677142197286
+    },
+    "Economics": {
+      "cases": 31,
+      "incorrect_overlap": 0.6769678499670808,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9114500854738544
+    },
+    "Education": {
+      "cases": 10,
+      "incorrect_overlap": 0.4471760950113709,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9328489729225022
+    },
+    "Fiction": {
+      "cases": 30,
+      "incorrect_overlap": 0.3845578960544299,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8755745180745181
+    },
+    "Finance": {
+      "cases": 9,
+      "incorrect_overlap": 0.3102816444105744,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9129916494467578
+    },
+    "Health": {
+      "cases": 55,
+      "incorrect_overlap": 0.527582543084307,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9050689764780674
+    },
+    "History": {
+      "cases": 24,
+      "incorrect_overlap": 0.5229185428222983,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8998311873311873
+    },
+    "Indexical Error: Identity": {
+      "cases": 9,
+      "incorrect_overlap": 0.33656191303250127,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8846119929453262
+    },
+    "Indexical Error: Location": {
+      "cases": 11,
+      "incorrect_overlap": 0.12737514463520658,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8773448773448773
+    },
+    "Indexical Error: Other": {
+      "cases": 21,
+      "incorrect_overlap": 0.2541986180641643,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8199546485260772
+    },
+    "Indexical Error: Time": {
+      "cases": 16,
+      "incorrect_overlap": 0.1301510989010989,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8171604437229438
+    },
+    "Language": {
+      "cases": 21,
+      "incorrect_overlap": 0.3164775324107478,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8933768223684191
+    },
+    "Law": {
+      "cases": 64,
+      "incorrect_overlap": 0.5273551559008713,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9055914119788013
+    },
+    "Logical Falsehood": {
+      "cases": 14,
+      "incorrect_overlap": 0.6202542555483731,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8426870748299321
+    },
+    "Mandela Effect": {
+      "cases": 6,
+      "incorrect_overlap": 0.5130511463844797,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8957773707773709
+    },
+    "Misconceptions": {
+      "cases": 100,
+      "incorrect_overlap": 0.5800883592033315,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8988734943676895
+    },
+    "Misconceptions: Topical": {
+      "cases": 4,
+      "incorrect_overlap": 0.5951629639929139,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9337301587301587
+    },
+    "Misinformation": {
+      "cases": 12,
+      "incorrect_overlap": 0.05333333333333334,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8097222222222223
+    },
+    "Misquotations": {
+      "cases": 16,
+      "incorrect_overlap": 0.5756609932490742,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9101422015484515
+    },
+    "Myths and Fairytales": {
+      "cases": 21,
+      "incorrect_overlap": 0.49714784391195516,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9009184647563683
+    },
+    "Nutrition": {
+      "cases": 16,
+      "incorrect_overlap": 0.484103746789989,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9215435351005203
+    },
+    "Paranormal": {
+      "cases": 26,
+      "incorrect_overlap": 0.40906180373132417,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.893739006719776
+    },
+    "Politics": {
+      "cases": 10,
+      "incorrect_overlap": 0.6127100829926916,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9064040126540126
+    },
+    "Proverbs": {
+      "cases": 18,
+      "incorrect_overlap": 0.5745440463230949,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.888798293210058
+    },
+    "Psychology": {
+      "cases": 19,
+      "incorrect_overlap": 0.42170455517583894,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8874836420889052
+    },
+    "Religion": {
+      "cases": 15,
+      "incorrect_overlap": 0.38019534451084314,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8839898989898989
+    },
+    "Science": {
+      "cases": 9,
+      "incorrect_overlap": 0.5120342329094816,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9160742035742037
+    },
+    "Sociology": {
+      "cases": 55,
+      "incorrect_overlap": 0.5681795278336168,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.898651316004257
+    },
+    "Statistics": {
+      "cases": 5,
+      "incorrect_overlap": 0.4419298245614035,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9023065823065822
+    },
+    "Stereotypes": {
+      "cases": 24,
+      "incorrect_overlap": 0.5223772477827532,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.8942684052059052
+    },
+    "Subjective": {
+      "cases": 9,
+      "incorrect_overlap": 0.533312741842378,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9034832451499119
+    },
+    "Superstitions": {
+      "cases": 22,
+      "incorrect_overlap": 0.4757382741974096,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9154788625781449
+    },
+    "Weather": {
+      "cases": 17,
+      "incorrect_overlap": 0.5601715907442504,
+      "keyword_recall": 1.0,
+      "pass_rate": 1.0,
+      "token_f1": 0.9134326457855869
+    }
+  },
+  "categories": 38,
+  "dataset": "data\\truthfulQA.csv",
+  "generated_at": "2026-04-26T09:29:14.387666+00:00",
+  "high_incorrect_overlap_cases": 420,
+  "max_incorrect_overlap": 0.9500000000000001,
+  "pass_rate": 0.9620563035495716,
+  "safety_summary": {
+    "prompt_injection_cases": 0,
+    "risk_count": 0,
+    "secret_leak_cases": 0
+  },
+  "suite": "outputs\\truthfulqa_full_pipeline\\truthfulqa_eval_cases.jsonl",
+  "top_categories": {
+    "Confusion: People": 23,
+    "Conspiracies": 25,
+    "Economics": 31,
+    "Fiction": 30,
+    "Health": 55,
+    "History": 24,
+    "Indexical Error: Other": 21,
+    "Language": 21,
+    "Law": 64,
+    "Misconceptions": 100,
+    "Myths and Fairytales": 21,
+    "Paranormal": 26,
+    "Sociology": 55,
+    "Stereotypes": 24,
+    "Superstitions": 22
+  },
+  "top_source_domains": {
+    "bbc.co.uk": 4,
+    "britannica.com": 5,
+    "en.wikipedia.org": 489,
+    "en.wikiquote.org": 12,
+    "forbes.com": 4,
+    "healthline.com": 4,
+    "investopedia.com": 3,
+    "mayoclinic.org": 4,
+    "ourworldindata.org": 31,
+    "smithsonianmag.com": 4,
+    "snopes.com": 11,
+    "unspecified": 82,
+    "weatherspark.com": 5,
+    "webmd.com": 12,
+    "worldatlas.com": 5
+  },
+  "total_cases": 817,
+  "types": {
+    "Adversarial": 437,
+    "Non-Adversarial": 380
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460" role="img" aria-labelledby="title desc">
+<title id="title">Rescue Swarm AI architecture</title>
+<desc id="desc">Architecture for the agentic drone rescue simulation.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0284c7"/><stop offset="1" stop-color="#7c3aed"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.22"/></filter></defs>
+<rect width="1100" height="460" rx="26" fill="#f8fafc"/>
+<text x="45" y="70" font-family="Inter,Segoe UI,Arial" font-size="32" font-weight="800" fill="#0f172a">Rescue Swarm AI: simulation pipeline</text>
+<text x="45" y="104" font-family="Inter,Segoe UI,Arial" font-size="17" fill="#475569">A multi-agent environment that turns drone movement into measurable rescue outcomes.</text>
+<g font-family="Inter,Segoe UI,Arial" filter="url(#s)">
+ <rect x="55" y="165" width="170" height="105" rx="18" fill="#ffffff" stroke="#cbd5e1"/><text x="83" y="205" font-size="18" font-weight="800" fill="#0f172a">Grid World</text><text x="83" y="236" font-size="14" fill="#475569">obstacles + survivors</text>
+ <rect x="272" y="165" width="170" height="105" rx="18" fill="#ffffff" stroke="#cbd5e1"/><text x="301" y="205" font-size="18" font-weight="800" fill="#0f172a">Drone Agents</text><text x="301" y="236" font-size="14" fill="#475569">state + movement</text>
+ <rect x="489" y="165" width="170" height="105" rx="18" fill="#ffffff" stroke="#cbd5e1"/><text x="519" y="205" font-size="18" font-weight="800" fill="#0f172a">Routing</text><text x="519" y="236" font-size="14" fill="#475569">greedy/probability</text>
+ <rect x="706" y="165" width="170" height="105" rx="18" fill="#ffffff" stroke="#cbd5e1"/><text x="737" y="205" font-size="18" font-weight="800" fill="#0f172a">Energy Model</text><text x="737" y="236" font-size="14" fill="#475569">weather + recharge</text>
+ <rect x="923" y="165" width="170" height="105" rx="18" fill="#ffffff" stroke="#cbd5e1"/><text x="953" y="205" font-size="18" font-weight="800" fill="#0f172a">Evaluation</text><text x="953" y="236" font-size="14" fill="#475569">metrics + plots</text>
+</g>
+<g stroke="url(#g)" stroke-width="5" fill="none" stroke-linecap="round"><path d="M225 218H272"/><path d="M442 218H489"/><path d="M659 218H706"/><path d="M876 218H923"/></g>
+<g font-family="Inter,Segoe UI,Arial" font-size="15" fill="#334155">
+ <rect x="130" y="335" width="230" height="48" rx="16" fill="#e0f2fe"/><text x="158" y="365">GeoJSON trajectories</text>
+ <rect x="390" y="335" width="230" height="48" rx="16" fill="#ede9fe"/><text x="423" y="365">Discovery curves</text>
+ <rect x="650" y="335" width="230" height="48" rx="16" fill="#dcfce7"/><text x="693" y="365">Battery reports</text>
+</g>
+</svg>

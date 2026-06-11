@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Setup — From Zero to Polished</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .doc{max-width:950px;margin:0 auto;padding:28px 22px 80px;}
+      .doc h1{font-size:40px;margin:10px 0 14px;}
+      .doc h2{margin-top:26px;}
+      .doc p,.doc li{color:var(--muted);line-height:1.75;}
+      .doc code{background:rgba(0,0,0,0.22);border:1px solid var(--line);padding:2px 6px;border-radius:8px;}
+      .doc pre{background:rgba(0,0,0,0.22);border:1px solid var(--line);padding:12px 12px;border-radius:16px;overflow:auto;}
+      .doc .callout{border:1px solid var(--line);background:rgba(124,58,237,0.10);padding:14px 16px;border-radius:18px;}
+      .topbar{position:sticky;top:0;background:linear-gradient(180deg, rgba(10,14,25,0.78), rgba(10,14,25,0.50));backdrop-filter: blur(14px);border-bottom:1px solid var(--line);}
+      [data-theme="light"] .topbar{background: linear-gradient(180deg, rgba(246,248,255,0.86), rgba(246,248,255,0.58));}
+      .topbar__inner{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 22px;max-width:1150px;margin:0 auto;}
+      .crumb{color:var(--muted);font-weight:800;font-size:13px;}
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar__inner">
+        <div>
+          <div class="crumb">Portfolio Hub → GitHub Setup Guide</div>
+          <div style="font-weight:900">From empty GitHub → polished portfolio</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a class="btn btn--ghost" href="index.html">← Back to portfolio</a>
+          <button class="btn btn--ghost" id="themeToggle">🌙</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="doc">
+      <h1>GitHub: From Zero → Polished (Step-by-step)</h1>
+      <div class="callout">
+        <strong>Rule of thumb:</strong> People reviewing your GitHub care about <em>proof</em>. Your repos already include outputs, logs, plots, traces, and reports.
+        Your job is to publish them cleanly and make them easy to find.
+      </div>
+
+      <h2>0) What you have</h2>
+      <p>You downloaded a bundle containing <strong>separate repos</strong>:</p>
+      <ul>
+        <li><code>atlas-rag-copilot/</code></li>
+        <li><code>sentinel-eval-safety-suite/</code></li>
+        <li><code>orion-tool-agent/</code></li>
+        <li><code>rescue-swarm-ai/</code></li>
+        <li><code>restaurant-hybrid-recommender/</code></li>
+        <li><code>portfolio-hub/</code> (landing page)</li>
+      </ul>
+
+      <h2>1) Create your GitHub account + basics</h2>
+      <ul>
+        <li>Add a professional profile photo.</li>
+        <li>Add a one-line headline like: <em>AI/ML Engineer • GenAI Systems • RAG • Agents • Recommenders</em>.</li>
+        <li>Add location + email.</li>
+      </ul>
+
+      <h2>2) Create 6 empty repositories</h2>
+      <p>Create these repos (public):</p>
+      <ol>
+        <li><code>atlas-rag-copilot</code></li>
+        <li><code>sentinel-eval-safety-suite</code></li>
+        <li><code>orion-tool-agent</code></li>
+        <li><code>rescue-swarm-ai</code></li>
+        <li><code>restaurant-hybrid-recommender</code></li>
+        <li><code>portfolio-hub</code></li>
+      </ol>
+      <p><strong>Important:</strong> do not initialize with README/license on GitHub (you already have them locally).</p>
+
+      <h2>3) Push each repo (repeat per folder)</h2>
+      <p>Example for <code>atlas-rag-copilot</code>:</p>
+      <pre><code>cd atlas-rag-copilot
+
+git init
+git add .
+git commit -m "Initial commit: project with outputs"
+
+git branch -M main
+git remote add origin https://github.com/&lt;your-username&gt;/atlas-rag-copilot.git
+git push -u origin main</code></pre>
+
+      <p>Repeat the same for the other projects (change folder name and remote URL).</p>
+
+      <h2>4) Deploy the landing page (GitHub Pages)</h2>
+      <ol>
+        <li>Go to <code>portfolio-hub</code> repo → <strong>Settings → Pages</strong></li>
+        <li>Source: <strong>Deploy from a branch</strong></li>
+        <li>Branch: <code>main</code>, Folder: <code>/docs</code></li>
+        <li>Save</li>
+      </ol>
+
+      <p>Your portfolio URL will be:</p>
+      <pre><code>https://&lt;your-username&gt;.github.io/portfolio-hub/</code></pre>
+
+      <h2>5) Personalize the landing page</h2>
+      <p>Edit:</p>
+      <pre><code>portfolio-hub/docs/data/config.json</code></pre>
+      <p>Replace <code>&lt;your-username&gt;</code>, LinkedIn, email. Commit and push.</p>
+
+      <h2>6) Polish checklist</h2>
+      <ul>
+        <li><strong>Repo About panel</strong>: good description + topics + link to your landing page.</li>
+        <li><strong>Pin repos</strong>: pin <code>portfolio-hub</code>, <code>atlas-rag-copilot</code>, and 2–3 others.</li>
+        <li><strong>Profile README</strong>: create a repo named <code>&lt;your-username&gt;</code> with a strong README that links to the landing page.</li>
+        <li><strong>Releases</strong>: tag a release for each repo (optional but looks senior).</li>
+      </ul>
+
+      <h2>7) Final verification (simulate reviewer behavior)</h2>
+      <ol>
+        <li>Open the landing page in an incognito window.</li>
+        <li>Click each repo from the landing page.</li>
+        <li>Confirm: README loads, images load, outputs exist.</li>
+      </ol>
+
+      <div class="note" style="margin-top:24px;">
+        <div class="note__title">You’re done when:</div>
+        <div class="note__body">
+          Your landing page loads fast, every project has a crisp README, and outputs are visible without running anything.
+        </div>
+      </div>
+    </main>
+
+    <script type="module">
+      const btn = document.getElementById('themeToggle');
+      function setTheme(next){
+        const html=document.documentElement;
+        if(next==='light') html.setAttribute('data-theme','light');
+        else html.removeAttribute('data-theme');
+        localStorage.setItem('theme', next);
+        btn.textContent = next==='light' ? '☀️' : '🌙';
+      }
+      const theme = localStorage.getItem('theme') || 'dark';
+      setTheme(theme);
+      btn.addEventListener('click', ()=>{
+        const isLight = document.documentElement.getAttribute('data-theme')==='light';
+        setTheme(isLight?'dark':'light');
+      });
+    </script>
+  </body>
+</html>
